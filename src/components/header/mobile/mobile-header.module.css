@@ -1,0 +1,93 @@
+.header {
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  animation: pulse 1.5s infinite;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-primary);
+  padding: 0.25rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.menuButton:hover {
+  color: var(--color-primary);
+  transform: rotate(90deg);
+}
+
+.mobileNav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mobileNav a {
+  display: block;
+  font: var(--font-weight-medium) var(--font-size-body-medium) /
+    var(--line-height-default) var(--font-family-default);
+  color: var(--color-text-primary);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+  position: relative;
+  width: fit-content;
+}
+
+.mobileNav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.mobileNav a:hover {
+  color: var(--color-primary);
+  transform: translateX(5px);
+}
+
+.mobileNav a:hover::after {
+  width: 100%;
+}
+
+.mobileNav a.active {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.mobileNav a.active::after {
+  width: 100%;
+}
+
+.sheetContent {
+  padding: 2rem 1.5rem;
+  animation: slideUp 0.5s ease-out;
+}

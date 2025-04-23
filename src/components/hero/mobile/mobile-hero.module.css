@@ -1,0 +1,68 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 500px;
+  background-color: red;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.content h1 {
+  font: var(--heading-medium);
+  color: var(--color-text-primary);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font: var(--body-default);
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  font: var(--font-weight-medium) var(--font-size-body-default) /
+    var(--line-height-default) var(--font-family-default);
+  background-color: var(--color-primary);
+  color: var(--neutral-0);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--neutral-0);
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 0.3;
+  transition: transform 0.5s, opacity 0.3s;
+}
+
+.button:active::after {
+  transform: scale(2);
+  opacity: 0;
+}
