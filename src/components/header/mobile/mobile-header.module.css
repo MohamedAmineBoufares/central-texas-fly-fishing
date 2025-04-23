@@ -1,6 +1,6 @@
 .header {
   padding: 1rem;
-  position: sticky;
+
   top: 0;
   z-index: 100;
   animation: fadeIn 0.8s ease-out;

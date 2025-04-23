@@ -2,6 +2,7 @@ import { useMobile } from "./hooks/use-mobile";
 
 import Header from "./components/header";
 import Hero from "./components/hero";
+import Footer from "./components/footer";
 
 function App() {
   const isMobile = useMobile("md");
@@ -14,19 +15,24 @@ function App() {
         {/* 
         <MobileFeaturedOptions />
         <MobileMemberStories />
-        <MobileFooter /> */}
+         */}
+        <Footer.MobileFooter />
       </main>
     );
   }
 
   return (
     <main>
-      <Header.WebHeader />
-      <Hero.WebHero />
-      {/* 
+      <section className="min-h-screen">
+        <Header.WebHeader />
+        <Hero.WebHero />
+        {/* 
       <FeaturedOptions />
       <MemberStories />
-      <Footer /> */}
+      */}
+      </section>
+
+      <Footer.WebFooter />
     </main>
   );
 }
