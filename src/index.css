@@ -96,28 +96,6 @@
   /* Caption */
   --font-size-caption: 0.75rem; /* 12px */
 
-  /* Typography Presets */
-  /* Headings */
-  --heading-large: var(--font-weight-semibold) var(--font-size-heading-large) /
-    var(--line-height-tight) var(--font-family-default);
-  --heading-medium: var(--font-weight-semibold) var(--font-size-heading-medium) /
-    var(--line-height-tight) var(--font-family-default);
-  --heading-default: var(--font-weight-semibold)
-    var(--font-size-heading-default) / var(--line-height-tight)
-    var(--font-family-default);
-  --heading-small: var(--font-weight-semibold) var(--font-size-heading-small) /
-    var(--line-height-tight) var(--font-family-default);
-
-  /* Body */
-  --body-large: var(--font-weight-regular) var(--font-size-body-large) /
-    var(--line-height-default) var(--font-family-default);
-  --body-medium: var(--font-weight-regular) var(--font-size-body-medium) /
-    var(--line-height-loose) var(--font-family-default);
-  --body-default: var(--font-weight-regular) var(--font-size-body-default) /
-    var(--line-height-loose) var(--font-family-default);
-  --body-small: var(--font-weight-regular) var(--font-size-body-small) /
-    var(--line-height-loose) var(--font-family-default);
-
   /* Accent */
   --accent: oklch(0.97 0 0);
   --radius: 0.625rem;
