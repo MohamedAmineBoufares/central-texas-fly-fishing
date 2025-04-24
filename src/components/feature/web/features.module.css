@@ -58,6 +58,7 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
 .imageContainer:hover .image {
