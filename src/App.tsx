@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Hero from "./components/hero";
 import Footer from "./components/footer";
 import Features from "./components/feature";
+import Story from "./components/story";
 
 function App() {
   const isMobile = useMobile("md");
@@ -14,9 +15,7 @@ function App() {
         <Header.MobileHeader />
         <Hero.MobileHero />
         <Features.MobileFeatures />
-        {/* 
-        <MobileMemberStories />
-         */}
+        <Story.MobileStory />
         <Footer.MobileFooter />
       </main>
     );
@@ -28,9 +27,7 @@ function App() {
         <Header.WebHeader />
         <Hero.WebHero />
         <Features.WebFeatures />
-        {/* 
-      <MemberStories />
-      */}
+        <Story.WebStory />
       </section>
 
       <Footer.WebFooter />

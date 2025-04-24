@@ -62,6 +62,8 @@
   --color-footer-bg: var(--neutral-90);
   --color-footer-text: var(--neutral-5);
 
+  --font-gluten: "Gluten", cursive;
+
   /* Typography */
   /* Font Families */
   --font-family-default: var(--font-inter), -apple-system, BlinkMacSystemFont,
@@ -76,25 +78,19 @@
   --font-weight-bold: 700;
 
   /* Line Heights */
-  --line-height-tight: 1.125em; /* 112% */
-  --line-height-default: 1.25em; /* 125% */
-  --line-height-loose: 1.5em; /* 150% */
+  --line-height-tight: 112%;
+  --line-height-default: 125%;
+  --line-height-loose: 150%;
 
   /* Font Sizes */
-  /* Headings */
-  --font-size-heading-large: 3.5rem; /* 56px */
-  --font-size-heading-medium: 3rem; /* 48px */
-  --font-size-heading-default: 2.5rem; /* 40px */
-  --font-size-heading-small: 2rem; /* 32px */
-
-  /* Body */
-  --font-size-body-large: 1.5rem; /* 24px */
-  --font-size-body-medium: 1.25rem; /* 20px */
-  --font-size-body-default: 1rem; /* 16px */
-  --font-size-body-small: 0.2rem; /* 14px */
-
-  /* Caption */
-  --font-size-caption: 0.75rem; /* 12px */
+  --font-size-heading-large: 56px;
+  --font-size-heading-medium: 48px;
+  --font-size-heading-default: 40px;
+  --font-size-heading-small: 32px;
+  --font-size-body-large: 24px;
+  --font-size-body-medium: 20px;
+  --font-size-body-default: 16px;
+  --font-size-body-small: 14px;
 
   /* Accent */
   --accent: oklch(0.97 0 0);
