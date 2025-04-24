@@ -8,6 +8,8 @@ export default defineConfig({
   server: { open: true, port: 3001, host: true },
   plugins: [react(), tailwindcss()],
 
+  base: "/central-texas-fly-fishing",
+
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
