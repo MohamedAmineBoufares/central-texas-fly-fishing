@@ -6,23 +6,27 @@ export default function MobileStory() {
     <section className={styles.stories}>
       <div className={styles.container}>
         <h2>Member stories</h2>
+
+        <div></div>
         <div className={styles.storiesList}>
           {STORIES.map((story, index) => (
             <div key={index} className={styles.story}>
-              <div className={styles.imageContainer}>
-                <img
-                  src={story.src}
-                  alt={story.title}
-                  width={80}
-                  height={80}
-                  className={styles.image}
-                />
-              </div>
+              <h3>{story.title}</h3>
+
               <div className={styles.storyContent}>
-                <h3>{story.title}</h3>
+                <div className={styles.imageContainer}>
+                  <img
+                    src={story.src}
+                    alt={story.title}
+                    width={80}
+                    height={80}
+                    className={styles.image}
+                  />
+                </div>
+
                 <p>{story.content}</p>
-                <button className={styles.button}>Read more</button>
               </div>
+              <button className={styles.button}>Read more</button>
             </div>
           ))}
         </div>
