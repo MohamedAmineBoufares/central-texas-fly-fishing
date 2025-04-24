@@ -7,7 +7,7 @@ export default function MobileStory() {
       <div className={styles.container}>
         <h2>Member stories</h2>
 
-        <div></div>
+        <hr className={styles.hr} />
         <div className={styles.storiesList}>
           {STORIES.map((story, index) => (
             <div key={index} className={styles.story}>
@@ -27,6 +27,8 @@ export default function MobileStory() {
                 <p>{story.content}</p>
               </div>
               <button className={styles.button}>Read more</button>
+
+              <hr className={styles.hr} />
             </div>
           ))}
         </div>
