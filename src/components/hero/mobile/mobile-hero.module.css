@@ -15,14 +15,16 @@
 }
 
 .content {
-  padding: 1.5rem;
+  padding: 2rem 1rem;
 }
 
 .content h1 {
-  font: var(--heading-medium);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-heading-default);
+  line-height: var(--line-height-tight);
+
   color: var(--color-text-primary);
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .content p {

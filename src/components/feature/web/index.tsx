@@ -4,7 +4,9 @@ import styles from "./features.module.css";
 import { FEATURES } from "../libs/data";
 
 export default function WebFeatures() {
-  const [openSection, setOpenSection] = useState<number | null>(0);
+  // Accordion open/close state is managed at the parent level
+  // to ensure only one section is active (expanded) at a time
+  const [openSection, setOpenSection] = useState<number | null>(null);
 
   const toggleSection = (index: number) => {
     setOpenSection(openSection === index ? null : index);

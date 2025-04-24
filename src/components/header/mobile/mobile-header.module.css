@@ -3,7 +3,6 @@
 
   top: 0;
   z-index: 100;
-  animation: fadeIn 0.8s ease-out;
 }
 
 .container {
@@ -20,7 +19,6 @@
 
 .logo:hover {
   transform: scale(1.05);
-  animation: pulse 1.5s infinite;
 }
 
 .menuButton {
@@ -89,5 +87,4 @@
 
 .sheetContent {
   padding: 2rem 1.5rem;
-  animation: slideUp 0.5s ease-out;
 }

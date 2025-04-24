@@ -4,11 +4,11 @@
 
 .container {
   max-width: 1200px;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .stories h2 {
-  font-size: var(--font-size-heading-medium);
+  font-size: var(--font-size-heading-default);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-tight);
   color: var(--neutral-90);
@@ -75,7 +75,7 @@
 
 .hr {
   height: 1px;
-  background-color: var(--neutral-20);
+  border-color: var(--neutral-20);
   margin: 1.5rem 0;
   width: 100%;
 }
