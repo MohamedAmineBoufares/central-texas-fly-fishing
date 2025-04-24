@@ -76,9 +76,9 @@
   --font-weight-bold: 700;
 
   /* Line Heights */
-  --line-height-tight: 1.125em;
-  --line-height-default: 1.25em;
-  --line-height-loose: 1.5em;
+  --line-height-tight: 1.125em; /* 112% */
+  --line-height-default: 1.25em; /* 125% */
+  --line-height-loose: 1.5em; /* 150% */
 
   /* Font Sizes */
   /* Headings */
